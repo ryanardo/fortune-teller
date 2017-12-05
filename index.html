@@ -5,14 +5,38 @@
     <link href="css/styles.css" rel="stylesheet" type="text/css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <script src="js/scripts.js"></script>
-    <title></title>
+    <title>Fortune Teller Quiz
+
+</title>
   </head>
   <body>
     <div class="container">
-      <h1>Transportation Survey</h1>
-      <form id="transportationSurvey">
+      <h1>Fortune Teller Quiz</h1>
+      <form id="fortuneQuiz">
+        <h2>How many of these 'un-lucky' things have happened to you lately?</h2>
+        <input type="checkbox" name="un-lucky" value="ladder">Walked under an open ladder?<br>
+        <input type="checkbox" name="un-lucky" value="blackCat">Seen a Black Cat?<br>
+        <input type="checkbox" name="un-lucky" value="brokenMirror">Have you broken any mirrors?<br>
+        <input type="checkbox" name="un-lucky" value="umbrellaIndoors">Have you opened any umbrellas indoors?<br>
+        <input type="checkbox" name="un-lucky" value="nightFan">Do you leave your fan on at night?<br>
+        <h2>How many of these 'lucky' things have happened to you lately?</h2>
+        <input type="checkbox" name="lucky" value="fourLeafClover">Found a four-leaf clover?<br>
+        <input type="checkbox" name="lucky" value="rainbows">Seen any rainbows?<br>
+        <input type="checkbox" name="lucky" value="doubleYolk">Cracked an egg, and found a double-yolk?<br>
+        <input type="checkbox" name="lucky" value="rabbitsFoot">Do you own a rabbits-foot?<br>
 
+        <!-- <div class="buttonPadding"> -->
+          <button type="submit" name="button" class="btn btn-success">Check how lucky you are!</button>
+        <!-- </div> -->
       </form>
+
+      <div>
+        <h3>Luck Results:</h3>
+        <h4 id="luckResultOutput"></h4>
+        <!-- <p id="lucky">You are VERY lucky!</p>
+        <p id="neutral">You're life is neutral.</p>
+        <p id="unlucky">How're you even alive still?</p> -->
+      </div>
     </div>
   </body>
   </html>
